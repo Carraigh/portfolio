@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Портфолио frontend-разработчика Шпагина Валерия. Проекты на HTML, CSS, JavaScript. Готов к стажировкам и первой работе." />
+  <meta name="description" content="Портфолио full-stack разработчика Шпагина Валерия. Проекты на HTML, CSS, JavaScript, Node.js, Go и SQL. Готов к стажировкам и первой работе." />
   <title>Моё портфолио</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
@@ -14,7 +14,7 @@
     <div class="container">
       <img src="assets/avatar.jpg" alt="Фото Валерия Шпагина" class="avatar" style="width: 120px; height: 120px; border-radius: 50%; margin: 10px auto; display: block; border: 3px solid white;">
       <h1>Привет, я <span>Шпагин Валерий Александрович</span></h1>
-      <p>Frontend-разработчик | Учусь создавать веб-приложения</p>
+      <p>Frontend-разработчик с уклоном в бэкенд и данные | Создаю веб-приложения с нуля</p>
       <a href="#projects" class="btn">Мои проекты</a>
       <a href="#contact" class="btn btn-outline">Связаться</a>
     </div>
@@ -28,8 +28,14 @@
         <div class="skill-item">HTML5</div>
         <div class="skill-item">CSS3</div>
         <div class="skill-item">JavaScript</div>
-        <div class="skill-item">Git</div>
-        <div class="skill-item">GitHub</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Go</div>
+        <div class="skill-item">REST API</div>
+        <div class="skill-item">PostgreSQL</div>
+        <div class="skill-item">SQL</div>
+        <div class="skill-item">Docker</div>
+        <div class="skill-item">Git / GitHub</div>
+        <div class="skill-item">JWT</div>
         <div class="skill-item">Адаптивная верстка</div>
       </div>
     </div>
@@ -40,12 +46,40 @@
     <div class="container">
       <h2>Проекты</h2>
       <div class="projects-grid">
+        <!-- To-Do App -->
         <div class="project-card">
           <h3>To-Do List</h3>
           <p>Веб-приложение для управления задачами на чистом JavaScript с сохранением в localStorage.</p>
           <div class="project-links">
             <a href="https://github.com/Carraigh/todo-app" target="_blank">GitHub</a>
             <a href="https://Carraigh.github.io/todo-app" target="_blank">Демо</a>
+          </div>
+        </div>
+
+        <!-- Blog API -->
+        <div class="project-card">
+          <h3>Blog API</h3>
+          <p>REST API для блога на Node.js + Express + PostgreSQL с JWT-аутентификацией и Docker.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/blog-api" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- URL Shortener -->
+        <div class="project-card">
+          <h3>URL Shortener</h3>
+          <p>Сервис сокращения ссылок на чистом Go с REST API и редиректом. Написан без фреймворков.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/url-shortener-go" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- SQL Analytics -->
+        <div class="project-card">
+          <h3>SQL Analytics</h3>
+          <p>Анализ реального датасета продаж интернет-магазина. Сложные SQL-запросы и бизнес-аналитика.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/sql-analytics" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -56,7 +90,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Связаться со мной</h2>
-      <p>Готов к стажировкам и junior-позициям в веб-разработке.</p>
+      <p>Готов к стажировкам и junior-позициям в веб-разработке. Интересуюсь full-stack и backend-направлениями.</p>
       <div class="contact-links">
         <a href="https://samara.hh.ru/resume/93108978ff0c09ea750039ed1f79654555566d?hhtmFrom=resume_list" target="_blank">Резюме на HH</a>
         <a href="https://github.com/Carraigh" target="_blank">GitHub</a>
