@@ -88,76 +88,114 @@ header p {
 /* Навыки */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .skill-item {
-  background: #e3f2fd;
-  padding: 15px;
+  background: #34495e;
+  color: white;
+  padding: 10px;
   text-align: center;
   border-radius: 8px;
   font-weight: 600;
-  color: #1565c0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 14px;
 }
 
 /* Проекты */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+  gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .project-card {
   background: white;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
 }
 
 .project-card h3 {
   margin-bottom: 10px;
   color: #1976d2;
+  font-size: 1.4em;
 }
 
 .project-card p {
   color: #555;
   margin-bottom: 15px;
   font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .project-links a {
-  margin-right: 15px;
-  color: #1976d2;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #2980b9;
+  color: white;
   text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .project-links a:hover {
-  text-decoration: underline;
+  background-color: #1a5f8c;
 }
 
 /* Контакты */
-.contact-links {
+#contact {
+  background: #f1f5f9;
+  padding: 60px 0;
+}
+
+#contact h2 {
+  margin-bottom: 15px;
+}
+
+#contact p {
   text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .contact-links a {
-  margin: 0 15px;
-  color: #1976d2;
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
   font-weight: 600;
+  font-size: 14px;
+  min-width: 130px;
+  text-align: center;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  background-color: #2980b9;
 }
 
 /* Подвал */
@@ -165,7 +203,9 @@ footer {
   background: #2c3e50;
   color: #ecf0f1;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
+  margin-top: 0;
+  min-height: auto;
 }
 
 footer p {
@@ -187,6 +227,12 @@ footer p {
   .section {
     padding: 60px 0;
   }
+
+  .contact-links a {
+    min-width: 110px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -197,5 +243,20 @@ footer p {
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .contact-links {
+    gap: 10px;
+  }
+
+  .contact-links a {
+    font-size: 12px;
+    padding: 6px 10px;
+    min-width: 100px;
   }
 }
