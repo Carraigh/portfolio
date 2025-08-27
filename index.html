@@ -15,8 +15,8 @@
       <img src="assets/avatar.jpg" alt="Фото Валерия Шпагина" class="avatar" style="width: 120px; height: 120px; border-radius: 50%; margin: 10px auto; display: block; border: 3px solid white;">
       <h1>Привет, я <span>Шпагин Валерий Александрович</span></h1>
       <p>
-        Full-stack разработчик с опытом в создании веб-приложений, API, систем автоматизации и обработки данных<br>
-        Готов решать разнообразные задачи — от прототипа до работающего сервиса
+        Full-stack разработчик с навыками фронтенда, бэкенда, анализа данных и информационной безопасности.<br>
+        Способен решать разнообразные задачи — от прототипа до работающего сервиса.
       </p>
       <a href="#projects" class="btn">Мои проекты</a>
       <a href="#contact" class="btn btn-outline">Связаться</a>
@@ -36,7 +36,7 @@
         <div class="skill-item">Анализ текста</div>
         <div class="skill-item">Git / GitHub</div>
         <div class="skill-item">Виртуальные окружения</div>
-        <div class="skill-item">Linux / Kali</div>
+        <div class="skill-item">Linux</div>
       </div>
     </div>
   </section>
@@ -102,6 +102,36 @@
             <a href="https://github.com/Carraigh/legal-contract-analyzer" target="_blank">GitHub</a>
           </div>
         </div>
+
+        <!-- WebSec Scanner -->
+        <div class="project-card">
+          <h3>WebSec Scanner</h3>
+          <p>Инструмент для аудита безопасности веб-сайтов: проверка HTTP-заголовков, подозрительных путей и файлов. 
+             Цветной вывод, уровни риска, HTML/JSON-отчёты и графический интерфейс. Python, requests, tkinter.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/websec-scanner" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Password Inspector -->
+        <div class="project-card">
+          <h3>Password Inspector</h3>
+          <p>Анализ паролей на сложность и участие в утечках (через API Have I Been Pwned). 
+             Проверка на слабые шаблоны и распространённые пароли. Python, hashlib, requests.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/password-inspector" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Log Sentinel -->
+        <div class="project-card">
+          <h3>Log Sentinel</h3>
+          <p>Анализ веб-логов на признаки атак: сканирование директорий, подозрительные IP, 
+             попытки доступа к /wp-admin, /.env и другим опасным путям. Python, регулярные выражения.</p>
+          <div class="project-links">
+            <a href="https://github.com/Carraigh/log-sentinel" target="_blank">GitHub</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -110,7 +140,7 @@
   <section id="contact" class="section">
     <div class="container">
       <h2>Связаться со мной</h2>
-      <p>Готов к стажировкам и junior-позициям в направлениях: бэкенд, анализ данных, автоматизация бизнес-процессов.</p>
+      <p>Готов к стажировкам и junior-позициям в направлениях: бэкенд, анализ данных, автоматизация бизнес-процессов, информационная безопасность.</p>
       <div class="contact-links">
         <a href="https://samara.hh.ru/resume/1137309cff0c47bd7b0039ed1f6a706755634e" target="_blank">Резюме на HH</a>
         <a href="https://github.com/Carraigh" target="_blank">GitHub</a>
@@ -132,10 +162,8 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop,
